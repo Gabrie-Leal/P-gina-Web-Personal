@@ -6,7 +6,7 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="style.css">
 
-    <title>testando</title>
+    <title>Personal Trainer</title>
 </head>
 
 <body>
@@ -67,7 +67,7 @@
             </div>
         </section>
 
-        <section class="personal" id="personal">
+        <section class="personal central" id="personal">
             <div class="back">
                 <div class="textoPersonal">
                     <p>
@@ -91,20 +91,35 @@
         <section class="email">
             <h1 id="contato">Dúvidas?</h1>
             <!---->
-            <form action="https://formsubmit.com/gabriellealdeoliveira2005@gmail.com"
+            <form
+            action="https://formsubmit.co/ajax/gabriellealdeoliveira2005@gmail.com"
             method="POST"
             data-form
-            >
-                <label for="nome">Nome:</label>
-                <input type="text" name="nome" id="nome" placeholder="nome" required>
-                <label for="email">E-mail:</label>
-                <input type="email" name="email" id="email" placeholder="seuemail@gmail.com" required pattern="[^@\s]+@[^@\s]+\.[^@\s]+">
-                <label for="texto">Mensagem:</label>
-                <textarea name="mensagem" id="texto" placeholder="Dúvidas, feedback, conselho? Digite o que quiser..."
-                   required ></textarea>
-                <button type="submit" data-button>ENVIAR</button>
-            </form>
+          >
+            <label for="nome">Nome</label>
+            <input type="text" name="nome" id="nome" required  placeholder="Seu nome"/>
+            <label for="email">E-mail</label>
+            <input type="email" name="email" id="email" required placeholder="seuemail@gmai.com" pattern="[^@\s]+@[^@\s]+"/>
+            <label for="mensagem">Mensagem</label>
+            <textarea name="mensagem" id="mensagem" required placeholder="dúvida, feeadback, recomendação. Converse comigo..."></textarea>
+            <button type="submit" data-button>Enviar</button>
+          </form>
         </section>
+
+        <section class="atuacao central">
+            <h1>Academias onde atendo</h1>
+            <div class="atuacao-card">
+                <img src="./imagens/olympia.png" alt="">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3143.238717870245!2d-45.43580080477604!3d-20.46676014201776!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b4ef1451619c41%3A0x60de9a65ae88c20a!2sAcademia%20Olympia!5e0!3m2!1spt-BR!2sbr!4v1725416073919!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+
+            <div class="atuacao-card">
+                <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14952.760807284832!2d-45.4404279!3d-20.4573797!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b4edac8fc67e85%3A0x59daf26be1398508!2sRoyal%20Sports%20-%20Formiga!5e0!3m2!1spt-BR!2sbr!4v1725417194158!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+                <img src="./imagens/royal.png" alt="">
+            </div>
+        </section>
+
+
     </main>
 
     <script src="script.js"></script>
