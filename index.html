@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+
+    <title>testando</title>
+</head>
+
+<body>
+    <section class="inicio">
+        <nav>
+            <ion-icon name="barbell-outline"></ion-icon>
+            <ul>
+                <a href="#trabalho">
+                    <li>Como Trabalhamos?</li>
+                </a>
+                <a href="#contato">
+                    <li>Contato</li>
+                </a>
+                <a href="#personal">
+                    <li>Personal</li>
+                </a>
+            </ul>
+            <div class="social">
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+            </div>
+        </nav>
+        <aside>
+            <div class="texto">
+                <h2>VENHA SER UM <br>CAMPEÃO</h2>
+                <p>O impossível não existe. Os limites só existem, se você os deixarem existir. <br>O poder surge a uma
+                    necessidade, não a um desejo. <br>Em cada um de nós, existe um poder oculto a ser despertado!</p>
+                <q cite="https://www.youtube.com/watch?v=bcCw8gH_-6I">Tauz, Player</q>
+            </div>
+        </aside>
+    </section>
+
+    <main>
+        <section class="cards">
+            <div class="cartao" id="trabalho">
+                <ion-icon name="footsteps-outline"></ion-icon>
+                <p>
+                    Guiamos você no caminho certo para melhorar sua saúde e elevar sua autoestima, com suporte
+                    personalizado em cada passo da jornada. Desde a primeira consulta, nos comprometemos a entender suas
+                    necessidades únicas, criando um plano de treino que não apenas atenda aos seus objetivos, mas que
+                    também inspire confiança e motivação em cada etapa!</p>
+            </div>
+            <div class="cartao">
+                <ion-icon name="checkmark-circle-outline"></ion-icon>
+                <p>
+                    Trabalhando com metas claras e objetivas, ajudamos você a acompanhar e analisar seus resultados de
+                    forma contínua. Assim, podemos identificar juntos onde ajustar e aprimorar seu desempenho, para que
+                    cada treino seja um passo adiante na sua transformação, rumo a uma vida mais saudável e plena.
+                </p>
+            </div>
+            <div class="cartao">
+                <ion-icon name="cash-outline"></ion-icon>
+                <p>
+                    Oferecemos planos acessíveis que cabem no seu bolso, porque acreditamos que cuidar da sua saúde não
+                    deve ser um luxo. Com opções flexíveis, você pode investir no seu bem-estar sem comprometer suas
+                    finanças, garantindo um acompanhamento de qualidade a um custo justo.
+                </p>
+            </div>
+        </section>
+
+        <section class="personal" id="personal">
+            <div class="back">
+                <div class="textoPersonal">
+                    <p>
+                        <span></span>Sou formado em Educação Física pela Unifor-MG, em Formiga, e atuo como Personal
+                        Trainer em três academias da região. <br><br><span></span>Com experiência também em áreas
+                        nutricionais, ofereço um acompanhamento completo, integrando treinos personalizados e
+                        orientações sobre alimentação saudável.
+
+                        Meu objetivo é ajudar cada pessoa a alcançar suas metas de forma segura e equilibrada, adaptando
+                        os planos de treino e nutrição às necessidades individuais.
+                    </p>
+                </div>
+
+                <div class="cartaoImg">
+                    <img src="./imagens/Personal.png" alt="Fotografia do personal Everton" class="imgPersonal">
+                    <h1>Everton</h1>
+                </div>
+            </div>
+        </section>
+
+        <section class="email">
+            <h1 id="contato">Dúvidas?</h1>
+            <!---->
+            <form action="https://formsubmit.com/gabriellealdeoliveira2005@gmail.com"
+            method="POST"
+            data-form
+            >
+                <label for="nome">Nome:</label>
+                <input type="text" name="nome" id="nome" placeholder="nome" required>
+                <label for="email">E-mail:</label>
+                <input type="email" name="email" id="email" placeholder="seuemail@gmail.com" required>
+                <label for="texto">Mensagem:</label>
+                <textarea name="mensagem" id="texto" placeholder="Dúvidas, feedback, conselho? Digite o que quiser..."
+                   required ></textarea>
+                <button type="submit" data-button>ENVIAR</button>
+            </form>
+        </section>
+    </main>
+
+    <script src="script.js"></script>
+    <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>
+    <script nomodule src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.js"></script>
+</body>
+
+</html>
