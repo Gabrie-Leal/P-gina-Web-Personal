@@ -10,7 +10,7 @@
 </head>
 
 <body>
-    <section class="inicio">
+    <header>
         <nav>
             <ion-icon name="barbell-outline"></ion-icon>
             <ul>
@@ -24,7 +24,7 @@
                     <li>Personal</li>
                 </a>
             </ul>
-            <div class="social">
+            <div>
                 <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
                 <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
             </div>
@@ -37,7 +37,7 @@
                 <q cite="https://www.youtube.com/watch?v=bcCw8gH_-6I">Tauz, Player</q>
             </div>
         </aside>
-    </section>
+    </header>
 
     <main>
         <section class="cards">
@@ -96,31 +96,53 @@
             method="POST"
             data-form
           >
-            <label for="nome">Nome</label>
+            <label for="nome">NomeTesteiGabriel</label>
             <input type="text" name="nome" id="nome" required  placeholder="Seu nome"/>
             <label for="email">E-mail</label>
             <input type="email" name="email" id="email" required placeholder="seuemail@gmai.com" pattern="[^@\s]+@[^@\s]+"/>
             <label for="mensagem">Mensagem</label>
             <textarea name="mensagem" id="mensagem" required placeholder="dúvida, feeadback, recomendação. Converse comigo..."></textarea>
-            <button type="submit" data-button>Enviar</button>
+            <button type="submit" data-button>Enviarr</button>
           </form>
         </section>
 
         <section class="atuacao central">
-            <h1>Academias onde atendo</h1>
+            <h1>Locais de atendimento</h1>
             <div class="atuacao-card">
-                <img src="./imagens/olympia.png" alt="">
+                <a href="https://www.instagram.com/olympia_oficial/" target="_blank"><img src="./imagens/olympia.png" alt="Logo marca da Academia Olympia"></a>
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d3143.238717870245!2d-45.43580080477604!3d-20.46676014201776!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b4ef1451619c41%3A0x60de9a65ae88c20a!2sAcademia%20Olympia!5e0!3m2!1spt-BR!2sbr!4v1725416073919!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
             </div>
 
             <div class="atuacao-card">
                 <iframe src="https://www.google.com/maps/embed?pb=!1m14!1m8!1m3!1d14952.760807284832!2d-45.4404279!3d-20.4573797!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x94b4edac8fc67e85%3A0x59daf26be1398508!2sRoyal%20Sports%20-%20Formiga!5e0!3m2!1spt-BR!2sbr!4v1725417194158!5m2!1spt-BR!2sbr" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
-                <img src="./imagens/royal.png" alt="">
-            </div>
+                <a href="https://www.instagram.com/royal.formiga/" target="_blank"><img src="./imagens/royal.png" alt="Logo Marca da Academia Royal"></a>
+                </div>
         </section>
-
-
     </main>
+
+    <footer>
+        <div class="footer-titulo">
+            <h1>Everton Santhiago</h1>
+            <p>Treinos personalizados e focados no seu objetivo de saúde e qualidade de vida. Vem treinar comigo!</p>
+        </div>
+        <div class="social">
+            <div class="sub-social">
+                <div class="conjunto">
+                    <ion-icon name="call-outline"></ion-icon>
+                    <p>+55 37 00000-0000</p>
+                </div>
+                <div class="conjunto">
+                    <ion-icon name="mail-outline"></ion-icon>
+                    <p>seuemail@gmail.com</p>
+                </div>
+            </div>
+            <div class="sub-social">
+                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+            </div>
+        </div>
+        <p class="Copyrigh">Feito em 2024 | Criado por Gabriel Leal</p>
+    </footer>
 
     <script src="script.js"></script>
     <script type="module" src="https://unpkg.com/ionicons@7.1.0/dist/ionicons/ionicons.esm.js"></script>

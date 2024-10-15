@@ -3,11 +3,17 @@
     box-sizing: border-box;
     margin: 0;
     scroll-behavior: smooth;
+
+}
+html{
+    overflow-x: hidden;
+    background-color: var(--bg-claro);
 }
 
 :root {
     font-size: 62.5%;
     --text-cor: #ffff;
+    --bg-claro:#dad3d3;
     --transparencia--black: rgba(0, 0, 0, .6);
     --bg-cor: rgb(37, 37, 37);
     --bg-card:rgba(46, 45, 45, 0.7);
@@ -16,7 +22,7 @@
     --cor-error:red;
 }
 
-.inicio::before {
+header::before {
     content: "";
     display: block;
     position: absolute;
@@ -28,46 +34,9 @@
     background-size: cover;
 }
 
-.inicio{
+header{
     position: relative;
     min-height: 100%;
-}
-
-aside {
-    height: 109rem;
-    width: 100%;
-
-    margin: 0;
-    text-align: center;
-    width: 100%;
-    background: var(--transparencia--black);
-    color: var(--text-cor);
-
-}
-
-aside h2 {
-    font-size: min(8rem, 12rem);
-}
-
-aside p {
-    font-size: min(2rem, 4rem);
-    margin-top: 2rem;
-}
-
-.texto {
-    display: flex;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-
-    text-align: center;
-    justify-content: center;
-}
-
-.texto q {
-    margin-top: 2rem;
-    font-size: 1.8rem;
-    ;
 }
 
 nav {
@@ -78,6 +47,8 @@ nav {
     justify-content: space-between;
 
     background-color: var(--transparencia--black);
+
+    animation: surgir 1.8s ease-in-out;
 }
 
 nav ul {
@@ -117,7 +88,58 @@ nav ion-icon:hover {
     animation: entortada .4s forwards;
 }
 
+aside {
+    height: 109rem;
+    width: 100%;
+
+    margin: 0;
+    text-align: center;
+    width: 100%;
+    background: var(--transparencia--black);
+    color: var(--text-cor);
+
+}
+
+aside h2 {
+    font-size: min(8rem, 12rem);
+
+    animation: entrarRight 1.2s ease-in-out;
+}
+
+aside p {
+    font-size: min(2rem, 4rem);
+    margin-top: 2rem;
+
+    animation: entrarLeft 1.2s ease-in-out;
+}
+
+.texto {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+
+    text-align: center;
+    justify-content: center;
+
+    
+
+}
+
+.texto q {
+    margin-top: 2rem;
+    font-size: 1.8rem;
+
+    animation: surgir 1.8s ease-in;
+}
+
 /*MAIN*/
+
+main{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
 
 .cards {
     display: flex;
@@ -188,8 +210,9 @@ nav ion-icon:hover {
     width: min(80rem, 84rem);
     padding: 2rem;
     color: var(--text-cor);
-    height: 100%;
+    height: max-content;
     margin-right: 12rem;
+    width: min(90rem,110rem);
 
     display: flex;
     align-items: center;
@@ -238,7 +261,7 @@ nav ion-icon:hover {
 .email {
     width: 100%;
     background-color: var(--bg-cor);
-    padding: 2rem;
+    padding: 9rem 0rem;
 
     display: flex;
     justify-content: center;
@@ -349,6 +372,8 @@ form button:disabled{
     flex-direction: column;
     background-color: var(--bg-cor);
     border-radius:  25px;
+    width: 150rem;
+    padding: 6rem;
 }
 
 .atuacao h1{
@@ -364,16 +389,86 @@ form button:disabled{
     margin-bottom: 4rem;
     border-radius: 20px;
     width: fit-content;
-
+    box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 10px 15px rgba(0, 0, 0, 0.2);
 
     background-color: var(--bg-card-atuacao);
+    transition: transform .4s;
+
+
 }
+
+.atuacao-card:hover{
+    transform: scale(1.05);
+}
+
 
 .atuacao-card img{
-    background-size:cover ;
     border-radius: 15px;
+    height: 100%;
+    width: 55rem;
+
+    transition: filter .5s;
 }
 
+.atuacao-card img:hover{
+    filter: contrast(1.75);
+}
+
+/*footer*/
+
+footer{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 8rem;
+    background-color: var(--bg-cor);
+    color:var(--text-cor);
+}
+
+.footer-titulo h1{
+    font-size: 4rem;
+    text-align: center;
+    margin-bottom: 55px;
+}
+footer p{
+    font-size: 2rem;
+    text-align: center;
+}
+
+.sub-social{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap:12px;
+}
+.conjunto{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap:10px;
+}
+
+footer ion-icon{
+    font-size: 3rem;
+    color: var(--text-cor);
+    cursor: pointer;
+
+    transition: transform .4s linear;
+}
+footer div{
+    width: 50rem;
+    margin-top: 15px;
+    padding: 4px;
+}
+
+.Copyrigh{
+    margin-top: 15px;
+}
+
+footer ion-icon:hover{
+    transform: scale(1.2);
+}
 
 @keyframes entortada {
     from {
@@ -392,5 +487,27 @@ form button:disabled{
 
     to {
         transform: rotate(0) scale(1);
+    }
+}
+
+@keyframes surgir{
+    from{
+        opacity: 0;
+    }
+    to{
+    }
+}
+
+@keyframes entrarRight{
+    from{
+        transform: translateX(-150vh);
+    }to{
+
+    }
+}
+
+@keyframes entrarLeft{
+    from{
+        transform: translateX(150vh);
     }
 }
