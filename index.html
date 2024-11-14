@@ -16,8 +16,8 @@
 <body>
     <header>
         <nav>
-            <ion-icon name="barbell-outline"></ion-icon>
-            <ul>
+            <button class="hamburguer"><ion-icon name="menu-outline" class="imgHamburguer"></ion-icon></button>
+            <ul class="ativar">
                 <a href="#trabalho">
                     <li>Como Trabalhamos?</li>
                 </a>
@@ -28,9 +28,9 @@
                     <li>Personal</li>
                 </a>
             </ul>
-            <div>
-                <a href=""><ion-icon name="logo-instagram"></ion-icon></a>
-                <a href=""><ion-icon name="logo-whatsapp"></ion-icon></a>
+            <div class="headerDivisao">
+                <a href=""><ion-icon class="redesCima" name="logo-instagram"></ion-icon></a>
+                <a href=""><ion-icon class="redesCima" name="logo-whatsapp"></ion-icon></a>
             </div>
         </nav>
         <aside>
@@ -46,24 +46,24 @@
     <main>
         <section class="cards">
             <div class="cartao" id="trabalho">
-                <ion-icon name="footsteps-outline"></ion-icon>
-                <p>
+                <button class="cardsButton"><ion-icon name="footsteps-outline"></ion-icon></button>
+                <p class="ativar">
                     Guiamos você no caminho certo para melhorar sua saúde e elevar sua autoestima, com suporte
                     personalizado em cada passo da jornada. Desde a primeira consulta, nos comprometemos a entender suas
                     necessidades únicas, criando um plano de treino que não apenas atenda aos seus objetivos, mas que
                     também inspire confiança e motivação em cada etapa!</p>
             </div>
             <div class="cartao">
-                <ion-icon name="checkmark-circle-outline"></ion-icon>
-                <p>
+                <button class="cardsButton"><ion-icon name="checkmark-circle-outline"></ion-icon></button>
+                <p class="ativar">
                     Trabalhando com metas claras e objetivas, ajudamos você a acompanhar e analisar seus resultados de
                     forma contínua. Assim, podemos identificar juntos onde ajustar e aprimorar seu desempenho, para que
                     cada treino seja um passo adiante na sua transformação, rumo a uma vida mais saudável e plena.
                 </p>
             </div>
             <div class="cartao">
-                <ion-icon name="cash-outline"></ion-icon>
-                <p>
+                <button class="cardsButton"><ion-icon name="cash-outline"></ion-icon></button>
+                <p class="ativar">
                     Oferecemos planos acessíveis que cabem no seu bolso, porque acreditamos que cuidar da sua saúde não
                     deve ser um luxo. Com opções flexíveis, você pode investir no seu bem-estar sem comprometer suas
                     finanças, garantindo um acompanhamento de qualidade a um custo justo.
@@ -74,9 +74,9 @@
         <section class="personal central" id="personal">
             <div class="back">
                 <div class="textoPersonal">
-                    <p>
+                    <p class="ativar">
                         <span></span>Sou formado em Educação Física pela Unifor-MG, em Formiga, e atuo como Personal
-                        Trainer em três academias da região. <br><br><span></span>Com experiência também em áreas
+                        Trainer em três academias da região. <br>Com experiência também em áreas
                         nutricionais, ofereço um acompanhamento completo, integrando treinos personalizados e
                         orientações sobre alimentação saudável.
 
@@ -94,7 +94,6 @@
 
         <section class="email">
             <h1 id="contato">Dúvidas?</h1>
-            <!---->
             <form
             action="https://formsubmit.co/ajax/gabriellealdeoliveira2005@gmail.com"
             method="POST"

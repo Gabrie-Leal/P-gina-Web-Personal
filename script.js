@@ -63,3 +63,32 @@ const formSubmit = new FormSubmit({
   error: "<h1 class='error'>Não foi possível enviar sua mensagem.</h1>",
 });
 formSubmit.init();
+
+//menu
+
+const hamburguer = document.querySelector(".hamburguer");
+const ul = document.querySelector("nav ul");
+
+hamburguer.addEventListener("click", ()=>{
+    ul.classList.toggle("ativar")
+  })
+
+ul.addEventListener("click",()=>{
+    ul.classList.toggle("ativar")
+})
+
+//cards
+
+const cartoes = document.querySelectorAll(".cartao");
+
+cartoes.forEach(cartao => {
+    cartao.addEventListener("click", () => {
+        const pCard = cartao.querySelector("p");
+        pCard.classList.toggle("ativar");
+    });
+});
+
+
+
+
+
