@@ -503,7 +503,11 @@ footer ion-icon:hover{
 
 /*Responsividade*/
 
-@media (max-width:780px){
+@media (max-width:850px){
+
+    body{
+        overflow-x: hidden;
+    }
     /*header*/
     aside{
         height: 70rem;
@@ -555,33 +559,38 @@ footer ion-icon:hover{
         align-items: center;
         justify-items: center;
     }
+    .cards .cartao{
+        width: 32rem;
+    }
     .cartao p{
         font-size: 2.5rem
     }
 
     /*Personal*/
-
     .central{
-        text-align: center;
-        height: auto;
+        padding: 0;
     }
     .back{
         flex-direction: column-reverse;
-        padding: 2rem 5rem;
+        padding: 2rem rem;
+        width: 60rem;
         align-items: center;
         justify-items: center;
+        margin:0;
     }
 
     .textoPersonal{
-        width: min(60rem,70rem);
+        width: 40rem;
         text-align: center;
         margin-right:0;
+        padding: 1rem;
     }
     .textoPersonal p {
-        font-size: 2.5rem;
+        font-size: 2rem;
+        line-height: 2.8rem;
     }
     .imgPersonal{
-        height: 40rem;
+        height: 30rem;
     }
 
     /*form*/
@@ -597,10 +606,10 @@ footer ion-icon:hover{
         font-size: 2rem;
     }
     form{
-        width: auto;
+        width: 38rem;
     }
     form input{
-        width: 38rem;
+        width: auto;
     }
 
     /*áreas de atuação*/
@@ -614,23 +623,30 @@ footer ion-icon:hover{
         padding: 1rem;
     }
     .atuacao h1{
-        font-size: 6rem;
+        font-size: 3rem;
         margin-bottom: 5rem;
     }
     .atuacao-card img{
         object-fit: contain;
-        width: 40rem;
+        width: 30rem;
     }
+    /*Footer*/
     footer{
         height: 40rem;
+        padding: 0;
+    }
+    .footerCentral{
+        width: 40rem;
     }
     .footer-titulo h1{
         font-size: 2rem;
     }
-    footer p{
-        font-size: 20px;
+    .footer-titulo p, .sub-social p{
+        font-size: 14px
     }
-    
+    .sub-social{
+        width: 38rem;
+    }
 }
 
 /*ANIMAÇÕES*/
