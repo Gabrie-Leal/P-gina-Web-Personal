@@ -170,46 +170,6 @@ main{
     background-color: var(--bg-cor);
 }
 
-@media (max-width:750px){
-    .hamburguer{
-        position: fixed;
-        z-index: 1;
-        top:8px;
-        right:2px;
-        display: block;
-    }
-
-    nav ul{
-        position: fixed;
-        top:50px;
-        right:10px;
-
-        background-color: var(--bg-cor);
-
-        flex-direction: column;
-        justify-content: space-between;
-        max-width: 20rem;
-        gap:2px;
-        padding: 8px;
-        border-radius: 8px;
-        z-index: 1;
-    }
-
-    .headerDivisao{
-        display: none;
-    }
-
-    .ativar{
-        display: none;
-    }
-
-    .cards{
-        flex-direction: column;
-        align-items: center;
-        justify-items: center;
-    }
-}
-
 .cartao {
     width: min(50rem, 58rem);
     background-color: var(--bg-card);
@@ -251,9 +211,9 @@ main{
 .central{
     width: auto;
     padding: 0 2rem;
-    margin: 2rem ;
+    margin: 2rem;
 }
-.personal {
+.personal{
     display: flex;
     justify-content: center;
 }
@@ -261,6 +221,7 @@ main{
 .back {
     display: flex;
     justify-content: center;
+    align-items: center;
     background-color: var(--bg-cor);
     width: 88%;
 
@@ -274,8 +235,7 @@ main{
     padding: 2rem;
     color: var(--text-cor);
     height: max-content;
-    margin-right: 12rem;
-    width: min(90rem,110rem);
+    margin-right: 4rem;
 
     display: flex;
     align-items: center;
@@ -288,10 +248,6 @@ main{
     min-width: 30rem;
 }
 
-.cartaoImg {
-    height: 100%;
-}
-
 .cartaoImg h1 {
     font-size: 4rem;
     color: var(--text-cor);
@@ -300,14 +256,13 @@ main{
 }
 
 .imgPersonal {
-    height: min(60rem, 70rem);
+    height: 65rem;
     width: auto;
     border-radius: 3rem;
     object-fit: contain;
 
     box-shadow: 0 15px 30px rgba(0, 0, 0, 0.25), 0 10px 15px rgba(0, 0, 0, 0.2);
     transition: transform 0.3s ease, box-shadow 0.3s ease;
-
 }
 
 .imgPersonal:hover {
@@ -546,6 +501,139 @@ footer ion-icon:hover{
     transform: scale(1.2);
 }
 
+/*Responsividade*/
+
+@media (max-width:780px){
+    /*header*/
+    aside{
+        height: 70rem;
+        padding: 6rem;
+    }
+
+    .texto h2{
+        font-size: 6rem;
+    }
+
+    .texto p{
+        font-size: 2rem;
+    }
+    .hamburguer{
+        position: fixed;
+        z-index: 1;
+        top:8px;
+        right:2px;
+        display: block;
+    }
+
+    nav ul{
+        position: fixed;
+        top:50px;
+        right:10px;
+
+        background-color: var(--bg-cor);
+
+        flex-direction: column;
+        justify-content: space-between;
+        max-width: 20rem;
+        gap:2px;
+        padding: 8px;
+        border-radius: 8px;
+        z-index: 1;
+    }
+
+    .headerDivisao{
+        display: none;
+    }
+
+    .ativar{
+        display: none;
+    }
+
+    /*Cartão*/
+    .cards{
+        flex-direction: column;
+        align-items: center;
+        justify-items: center;
+    }
+    .cartao p{
+        font-size: 2.5rem
+    }
+
+    /*Personal*/
+
+    .central{
+        text-align: center;
+        height: auto;
+    }
+    .back{
+        flex-direction: column-reverse;
+        padding: 2rem 5rem;
+        align-items: center;
+        justify-items: center;
+    }
+
+    .textoPersonal{
+        width: min(60rem,70rem);
+        text-align: center;
+        margin-right:0;
+    }
+    .textoPersonal p {
+        font-size: 2.5rem;
+    }
+    .imgPersonal{
+        height: 40rem;
+    }
+
+    /*form*/
+    .email{
+        height: 60rem;
+    }
+
+    .email h1{
+        font-size: 6rem;
+    }
+
+    form label{
+        font-size: 2rem;
+    }
+    form{
+        width: auto;
+    }
+    form input{
+        width: 38rem;
+    }
+
+    /*áreas de atuação*/
+
+    iframe{
+        display: none;
+    }
+    
+    .atuacao{
+        width: 55rem;
+        padding: 1rem;
+    }
+    .atuacao h1{
+        font-size: 6rem;
+        margin-bottom: 5rem;
+    }
+    .atuacao-card img{
+        object-fit: contain;
+        width: 40rem;
+    }
+    footer{
+        height: 40rem;
+    }
+    .footer-titulo h1{
+        font-size: 2rem;
+    }
+    footer p{
+        font-size: 20px;
+    }
+    
+}
+
+/*ANIMAÇÕES*/
 @keyframes entortada {
     from {
         transform: rotate(0);
