@@ -630,9 +630,10 @@ footer ion-icon:hover{
         object-fit: contain;
         width: 30rem;
     }
+
     /*Footer*/
+
     footer{
-        height: 40rem;
         padding: 0;
     }
     .footerCentral{
@@ -641,11 +642,17 @@ footer ion-icon:hover{
     .footer-titulo h1{
         font-size: 2rem;
     }
+    .footer-titulo {
+        width:40rem;
+    }
     .footer-titulo p, .sub-social p{
         font-size: 14px
     }
     .sub-social{
         width: 38rem;
+    }
+    .Copyrigh{
+        margin-bottom: 2rem;
     }
 }
 
